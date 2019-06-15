@@ -212,7 +212,7 @@
                 "priority": 1200,
                 "sourceAddressPrefix": "*",
                 "protocol": "Tcp",
-                "destinationPortRange": "9090-9093",
+                "destinationPortRange": "6273-6280",
                 "access": "Allow",
                 "direction": "Inbound",
                 "sourcePortRange": "*",
