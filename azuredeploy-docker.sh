@@ -87,9 +87,9 @@ chgrp -R $MAPD_USERNAME $MAPD_STORAGE >> $LOG_PATH 2>&1
 sudo -u $MAPD_USERNAME crontab -l > $MAPD_STORAGE/mapd_start  >> $LOG_PATH 2>&1
 if [ ! -z "$NVIDIA_GPU" ]
 then
-    sudo -u $MAPD_USERNAME echo "docker run --runtime=nvidia -v $MAPD_STORAGE/mapd-docker-storage:/mapd-storage -p 9090-9092:9090-9092 omnisci/core-os-cuda" >> $MAPD_STORAGE/StartMapD.sh 
+    sudo -u $MAPD_USERNAME echo "docker run --runtime=nvidia -v $MAPD_STORAGE/omnisci-docker-storage:/omnisci-storage -p 9090-9092:9090-9092 omnisci/core-os-cuda" >> $MAPD_STORAGE/StartMapD.sh 
 else
-    sudo -u $MAPD_USERNAME echo "docker run -d -v $MAPD_STORAGE/mapd-docker-storage:/mapd-storage -p 9090-9092:9090-9092 omnisci/core-os-cpu" >> $MAPD_STORAGE/StartMapD.sh 
+    sudo -u $MAPD_USERNAME echo "docker run -d -v $MAPD_STORAGE/omnisci-docker-storage:/omnisci-storage -p 9090-9092:9090-9092 omnisci/core-os-cpu" >> $MAPD_STORAGE/StartMapD.sh 
 fi
 sudo -u $MAPD_USERNAME echo "@reboot bash $MAPD_STORAGE/StartMapD.sh &" >> $MAPD_STORAGE/mapd_start  
 sudo -u $MAPD_USERNAME crontab $MAPD_STORAGE/mapd_start  >> $LOG_PATH 2>&1
