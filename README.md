@@ -17,8 +17,8 @@ Identify an Azure Environment and User Account
 
 Click "Deploy to Azure" to load our Azure Resource Manager deployment template into the Azure Portal.  Don't worry - nothing will be deployed until you complete the required fields and confirm the deployment.  Wonder which components we'll use?  The Visualize link will map out the resources.  
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Ftamhinsf%2FOmniSci4Azure%2Fmaster%2Fazuredeploy.json" target="_blank"> <img alt="Deploy to Azure" src="http://azuredeploy.net/deploybutton.png"/> </a>&nbsp;&nbsp;
-<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Ftamhinsf%2FOmniSci4Azure%2Fmaster%2Fazuredeploy.json" target="_blank"> <img alt="Visualize" src="http://armviz.io/visualizebutton.png"/></a> 
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%gabomgp%2FOmniSci4Azure%2Fmaster%2Fazuredeploy.json" target="_blank"> <img alt="Deploy to Azure" src="http://azuredeploy.net/deploybutton.png"/> </a>&nbsp;&nbsp;
+<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fgabomgp%2FOmniSci4Azure%2Fmaster%2Fazuredeploy.json" target="_blank"> <img alt="Visualize" src="http://armviz.io/visualizebutton.png"/></a> 
 
 New to Azure?  Here's a description of the fields in the template.
 
